@@ -1,0 +1,103 @@
+ /* Null start */
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+ /* Null end */
+
+.vocabulary{
+    margin-left: 10px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.title{
+    font-family: sans-serif;
+}
+
+.vocabulary__body{
+    max-width: 780px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vocabulary__body input{
+    height: 60px;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+.addWord {
+    height: 60px;
+    font-size: 15px;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.vocabulary__book{
+    max-width: 600px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.item__words{
+    max-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 5px 10px;
+}
+
+.item__words + .item__words {
+    margin-top: 20px;
+}
+
+#btnRemove {
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+    background: url('./img/remove.png') no-repeat;
+    background-size: cover;
+}
+
+.error-noword {
+    width: 800px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top: -100%;
+    background-color: #bd002ff8;
+    border: 1px solid #fe585d;
+    color: #ff252c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+
+.closeError {
+    cursor: pointer;
+    background: url('./img/remove.png') no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
